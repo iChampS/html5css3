@@ -6,7 +6,7 @@
 /********** Principal **********/
 body{
 	font-family: 'Slabo 27px', serif;
-	/* background-color: #000000; */
+	/* background-color: #191970; */
 	background-image: url("../Imagens/textura.jpg");
 	background-size: cover; /* Manter o tamanho de forma responsiva */
 	background-attachment: fixed; /* Fixa o background */
@@ -16,8 +16,22 @@ body{
 	max-width: 1024px;
 	/* background-color: #FFF; */
 	margin: 0 auto; /* Centralizar */
+	margin-top: 50px; /* Box Model */
 }
 
+/********** Cabeçalho **********/
+/*header{
+	width: 100%px;
+	height: 200px;
+	background-color: #191970; /* Dica para ajustar elementos
+}*/
+
+/*header img{
+	width: 128px;
+	height: 128px;
+	margin-left: 150px;
+
+}*/
 /********** Tratamento Responsivo **********/
 img {
 	max-width: 100%; /* Todas as imagens do site ficam resposivas */

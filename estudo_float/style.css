@@ -1,0 +1,30 @@
+/**
+Estudo do float
+* @autor Victor Guilherme
+* Data 26/09/2018
+*/
+
+/*
+float: right; (flutua a direita do elemento anterior)
+float: left; (flutua a esquerda do elemento anterior)
+*/
+
+#vermelho{
+	width: 248px;
+	height: 248px;
+	background-color: #0000ff; /* Dica para ajustar elementos */
+	float: left;
+}
+
+#verde{
+	width: 248px;
+	height: 248px;
+	background-color: #ffffff;
+	float: left;
+}
+
+#azul{
+	width: 248px;
+	height: 248px;
+	background-color: #ff0000;
+	float: left;
