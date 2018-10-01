@@ -1,0 +1,39 @@
+/**
+* Estudo dos menus
+* Exemplo 2 - Menu simples
+* @author Victor Guilherme
+* Data 01/10/2018
+*/
+
+body{
+	font-family: sans-serif;
+}
+
+nav{
+	width: 100%;
+	height: 48px;
+	background-color: #343538;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	/*Float right*/
+}
+
+nav ul li{
+	float: left;
+}
+
+nav ul li a{
+	color: #FFFFFF;
+	text-decoration: none;
+	padding: 15px;
+	display: block; /*Transformar em bloco "clicável"*/
+}
+
+nav ul li a:hover{
+	background-color: #00BCFF;
+	transition: all 0.5s;
+}
