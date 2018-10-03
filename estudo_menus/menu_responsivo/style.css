@@ -2,7 +2,7 @@
 * Estudo dos menus
 * Menu drop responsivo
 * @author Victor Guilherme
-* Data 01/10/2018
+* Data 01/10/2018 - 03/10;
 */
 
 body{
@@ -58,4 +58,46 @@ nav li:hover ul{
 	/* Alinhamento */
 	display: inline-block;
 	vertical-align: middle;
+}
+
+.Mobile{
+	display: none;
+}
+/* Classe usada pelo JavaScript para fixar o menu */
+.Fixar{
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+/********** Tratamento responsivo **********/
+
+@media screen and (max-width: 480px){
+	body{
+		margin: 0px;
+	}
+	/* Menu hamburguer */
+	.Mobile{
+		display: block;
+		background-color: #0B0B61;
+		color: #FFFFFF;
+		text-decoration: none;
+		padding: 15px;
+	}
+
+	nav > ul > li{
+		float: none;
+	}
+		nav ul{
+		width: 100%;
+		display: none;
+	}
+
+	nav ul li a:hover{
+		transition: all 0s; /* Remover efeito de transição */
+	}
+
+	nav li ul li{
+		background-color: #8B0000;
+	}
 }

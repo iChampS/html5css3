@@ -16,6 +16,8 @@
 	<!-- A linha abaixo "garente" o layout responsivo nos diversos dispositivos mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="CSS/styte.css">
+	<!-- Uso da jQuery via CDN do Google -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -26,17 +28,20 @@
 			<img src="Imagens/256x256 (2).png" alt="HTML5 CSS3">
 		</header>
 		<!-- Menu -->
-		<nav>
-
+		<nav class="Menu"><!-- Classe usada para fixar o menu no JavaScript-->
+		<!-- &#9776 (Desenho 3 linhas horizontais-->
+		<a href="#" class="Mobile">&#9776 Menu</a>
 			<!-- ul>li*4>a -->
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Conteúdo</a></li>	
-					<li><a href="#">HTML</a></li>
-					<li><a href="#">CSS</a></li>
-					<li><a href="#">JavaScript</a></li>
-				</li>
+				<li><a href="#" class="Detalhes">Conteúdo </a>
+				<ul>
+					<li><a href="#">• HTML 5</a></li>
+					<li><a href="#">• CSS3</a></li>
+					<li><a href="#">• JavaScript</a></li>
+				</ul>
+			</li>	
 				<li><a href="#">Contato</a></li>
 			</ul>
 		</nav>
@@ -71,5 +76,8 @@
 		</footer>
 	</div>
 
+<script src="JS/menuresponsivo.js"></script>
+<script src="JS/fixamenu.js"></script>
+<script src="JS/removeclick.js"></script>
 </body>
 </html>
