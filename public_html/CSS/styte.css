@@ -61,6 +61,7 @@ nav ul{
 
 nav > ul > li{
 	float: left;
+	width: 25%; /* 4 elementos do menu primário */
 }
 
 nav ul li a{
@@ -68,6 +69,12 @@ nav ul li a{
 	color: #FFFFFF;
 	padding: 15px;
 	display: block;
+	text-align: center;
+	padding: 15px 15px 10px 15px;
+	border-right: #8B0000 2px solid;
+	border-left: #8B0000 2px solid;
+	border-top: #8B0000 2px solid;
+	border-bottom: #8B0000 2px solid;
 }
 
 nav ul li a:hover{
@@ -76,7 +83,8 @@ nav ul li a:hover{
 }
 
 nav li ul{
-	display: none; 
+	display: none;
+	width: 16.2%;
 }
 
 nav li:hover ul{
@@ -95,6 +103,8 @@ nav li:hover ul{
 	vertical-align: middle;
 }
 
+/********** Smartphone **********/
+
 .Mobile{
 	display: none;
 }
@@ -105,12 +115,23 @@ nav li:hover ul{
 	z-index: 3;
 }
 
-/********** Tratamento responsivo **********/
+/********** Smartphone **********/
 
 @media screen and (max-width: 480px){
 	body{
 		margin: 0px;
 	}
+
+/********** Principal **********/
+	body{
+		margin: 0px;
+	}
+
+	#main{
+		margin: 0px;
+	}
+
+/********** Menu **********/
 	/* Menu hamburguer */
 	.Mobile{
 		display: block;
@@ -128,8 +149,14 @@ nav li:hover ul{
 		display: none;
 	}
 
+	nav ul li a{
+		font-size: 0.875em;
+		padding: 12px;
+		text-align: left;
+	}
+
 	nav ul li a:hover{
-		transition: all 0s; /* Remover efeito de transição */
+		transition: all 0s; /* Remover efeito de transição */				
 	}
 
 	nav li ul li{
