@@ -1,25 +1,31 @@
 /** 
  * Criando um menu responsivo com jQuery
- * @author Victor Guilherme
- * Data 03/10/2018
+ * @author José de Assis
+ * 13/04/2017
  */
 $(document).ready(function(){
-	// Quando o objeto da classe .Mobile for clicado
+	//quando o objeto da classe .Mobile for clicado
 	$('.Mobile').click(function(){
-		// A linha abaixo altera o estado para nav ul (1° nivel)
+		// a linha abaixo altera o estado para nav ul (1° nivel)
 		$('nav > ul').slideToggle();		
 	});
- 	// A função abaixo resolve o problema de "sumir" o menu quando aumenta a resolução da tela responsivo -> desktop
+ 	// a função abaixo resolve o problema de "sumir" o menu quando aumenta a resolução da tela responsivo -> desktop
 	// (window).resize -> redimensionar a janela do navegador
 	$(window).resize(function(){
-		if($(window).width() > 480){ // Se resolução maior que 480 px
+		if($(window).width() > 480){ //se resolução maior que 480 px
 			$('nav ul').removeAttr('style');			
 		}
 	});
- 	// Solução do 2° nível mobile
+ 	//solução do 2° nível mobile
 	$('.Detalhes').click(function(){
-		if($(window).width() <= 480){// Só aplicar este efeito no mobile
+		if($(window).width() <= 480){//só aplicar este efeito no mobile
 			$('nav li:hover ul').slideToggle();
 		}
 	});
 });
+ 
+ 
+ 
+ 
+ 
+ 
