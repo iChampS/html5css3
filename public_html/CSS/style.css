@@ -129,9 +129,40 @@ nav li:hover ul{
 .Fixar{
 	position: fixed;
 	top: 0;
-	z-index: 3;
+ 	z-index: 3;
 }
 
+/********** Formulário de Contato **********/
+#contato{
+	padding-top: 80px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 7px;
+	border-radius: 5px;
+	border: 1px solid #0015FF;
+	margin-bottom: 7px; 
+}
+
+#contato textarea{
+	width: 99%;
+	padding: 10px 10px 40px 10px;
+	border-radius: 5px;
+	border: 1px solid #0015FF;
+	margin-bottom: 7px;
+	resize: none; 
+}
+
+#contato input[type=submit]{
+	background-color: #0015FF;
+	border-radius: 5px;
+	border: 1.4px solid #000000;
+	color: #FFFFFF;
+	padding: 10px 25px 10px 25px;
+}
 
 	/***** RODAPÉ *****/
 	footer{
@@ -141,16 +172,13 @@ nav li:hover ul{
 		padding-top: 1px;
 		padding-bottom: 1px;
 		text-align: center;
-		color: #ffffff;
+		color: #FFFFFF;
 		font-size: 1em;
 		border-bottom: 2px solid #000000;
 		border-left: 2px solid #000000;
 		border-right: 2px solid #000000;
-
+		border-top: 2px solid #000000;
 	}
-
-
-
 
 /***** Tratamento responsivo ********/
 
@@ -162,7 +190,7 @@ nav li:hover ul{
 		margin: 0px;
 	}
 
-	/*** cabeçalho ***/
+	/*** Cabeçalho ***/
 
 	header{
  	text-align: center;
@@ -219,4 +247,3 @@ nav ul{
 		display: none;
 	}
 }
-
