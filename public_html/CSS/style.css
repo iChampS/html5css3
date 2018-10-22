@@ -107,6 +107,67 @@ nav li:hover ul{
 	height: 128px;
 }
 
+/*** heading ***/
+#heading{
+	width: 80%;
+	margin: 0 auto;
+	padding: 35px;
+}
+
+#heading h2{
+	text-align: center;
+	font-weight: 550;
+}
+
+#html5{
+	font-weight: 550;
+	color: #FFFFFF;
+}
+
+#css3{
+	font-weight: 550;
+	color: #FFFFFF;
+}
+
+/********** Blocos **********/
+#destaque{
+	max-height: 1024px;
+	height: 320px;
+}
+
+.blocos{
+	width: 30.76%; /*--- (315px/1024px)*100 ---*/
+	height: 320px;
+	background-color: #0015FF;
+	float: left;
+	margin-left: 1.8%; /*--- (20px/1024px)*100 ---*/
+	border: 1px solid #000000;
+	text-align: center;
+	position: relative; /* Posicionamento do botão */
+}
+
+.blocos p{
+	padding: 10px 10px 0px 10px;
+	text-align: left;
+}
+
+.blocos a{
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	background-color: #FFFFFF;
+	text-decoration: none;
+	font-size: 0.875em;
+	border-radius: 10px;
+	position: absolute;
+	right: 90px;
+	bottom: 25px;
+}
+
+.blocos img{
+	margin-top: 5px;
+}
+
 /* Desenhando um triângulo no css */
 
 .Detalhes:after{ /* Atributo after (após o conteudo)*/
@@ -245,5 +306,20 @@ nav ul{
 	não for clicado **/
 	nav li:hover ul{
 		display: none;
+	}
+
+		/***** blocos *****/
+	#destaque{
+		max-width: 315px;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.blocos{
+		width: 100%;
+		height: 320px;
+		float: none;
+		margin: 0;
+		margin bottom: 20px;
 	}
 }
