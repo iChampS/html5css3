@@ -1,0 +1,398 @@
+/**
+* Folha de estilo principal do site UEFA Champions League
+* @author Victor Guilherme
+*/
+
+/*************** Importando Fonts ***************/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+/***************Principal ***************/
+body{
+	font-family: 'Open Sans', sans-serif;
+	/* background-color: #01034E; /* Uso somente da cor como background */ 
+	/* Uso de uma imagem como background */
+	background-image: url("../imagens/background.jpg");
+	background-attachment: fixed; /* Fixa o background */
+	background-size: cover; /* Manter o tamanho de forma responsiva */
+	font-size: 1em; /* 1 em = 16px */
+}   
+
+#main{
+	max-width: 1024px;
+	background-color: #468596;
+	margin: 0 auto; /* Centralizar a div */
+	margin-top: 50px; /* Box model*/
+}
+
+/*************** Cabeçalho ***************/
+header{
+	width: 100%;
+	height: 150px;
+	/* background-color: #FFFF00; /*dica para ajustar elementos*/
+	margin-bottom: 20px;
+}
+
+header img{
+	width: 160px;
+	height: 150px;
+	margin-top: 10px;
+	margin-left: 40px;
+}
+
+/*************** Menu ***************/
+
+nav{
+	width: 100%;
+	max-width: 1024px;	
+	position: absolute;
+	z-index: 3;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+nav > ul > li{
+	float: left;
+	width: 24.8%; /* 4 elementos do menu primário */
+	border-top: 0.5px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;	
+	border-right: 1px solid #FFFFFF;
+}
+
+nav > ul > li > a{
+	font-size: 1.125em;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 15px;
+	display: block;
+	text-align: center; 
+	background-color: #01034E;
+}
+
+nav ul li a:hover{
+	background-color: #750265;
+	transition: all 0.3s; /* Efeito transição (0 a 1) */
+}
+
+nav li ul{
+	display: none;
+}
+
+nav li:hover ul{
+	display: block;
+}
+
+div img a{
+	width: 400px;
+	height: 180px;
+}
+
+/* Desenhando um triângulo no CSS */
+.Detalhes:after{ /* Atributo after (Após o conteúdo)*/
+	content:''; /* content: Insere um conteúdo no CSS */
+	border: 5px solid transparent;
+	/*border-left-color: #FF0000;*/
+	/*border-right-color: #00FF00;*/
+	/*border-bottom-color: #0000FF;*/
+	border-top-color: #E8E8E8;
+	/* alinhamento */
+	display: inline-block;
+	vertical-align: middle;	
+}
+
+.Mobile{
+	display: none;
+}
+
+/* Classe usada pelo JS para fixar o menu */
+.Fixar{
+	position: fixed;
+	top: 0;	
+}
+
+/*************** Conteúdo em Destaque - Início ***************/
+
+/***** Banner *****/
+#banner{
+	margin-top: 75px;
+	max-width: 1024px;
+	height: 350px;
+	/***** Usado para flexibilizar o layout *****/
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+#banner img{
+	filter: brightness(40%);
+}
+
+#banner h1{
+	position: absolute;
+	max-width: 1024px;
+	text-align: center;
+	color: #ffffff;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 4em;
+	text-transform: uppercase; /* Maiúsculo */
+}
+
+/***** Heading *****/
+#heading{
+	width: 80%;
+	margin: 0 auto;
+	padding: 35px;
+}
+
+#heading h2{
+	text-align: center;
+	font-weight: 400;
+}
+
+#html5{
+	font-weight: 600;
+	color: #000000;
+}
+
+#css3{
+	font-weight: 600;
+	color: #000000;
+}
+
+#htss3{
+	font-weight: 600;
+	color: #000000;
+}
+
+/*************** Blocos ***************/
+#destaque{
+	max-width: 1024px;
+	height: 320px;
+}
+
+.blocos{
+	width: 30.76%; /*--- (315px/1024px)*100 ---*/
+	height: 320px;
+	float: left;
+	margin-left: 1.75%; /*--- (20px/1024px)*100 ---*/
+	border: 1px solid #dedede;
+	text-align: center;
+	position: relative; /* Posicionamento do botão */
+}
+
+.blocos p{
+	padding: 0px 10px 0px 10px;
+	text-align: left;
+}
+
+.blocos a{
+	width: 80px;
+	padding: 1px;
+	display:block;	
+	background-color: #01034E;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 0.875em;
+	position: absolute;
+	right: 5px;
+	bottom: 5px;
+	border-left: 0.1px solid #FFFFFF;
+	border-top: 0.1px solid #FFFFFF;
+}
+
+div .blocos img{
+	width: 320px;
+	height: 180px;
+}
+
+/*************** Formulário de contato ***************/
+#contato{
+	padding-top: 80px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #0015FF;
+	margin-bottom: 20px;	
+}
+
+#contato textarea{
+	width: 100%;
+	padding: 10px 10px 40px 10px;
+	border-radius: 5px;
+	border: 1px solid #0015FF;
+	margin-bottom: 20px;
+	resize: none;
+}
+
+#contato input[type=submit]{
+	background-color: #01034E;
+	border-radius: 5px;
+	border: 1px solid #FFFFFF;
+	padding: 10px 25px 10px 25px;
+	color: #FFFFFF;
+}
+
+/*************** Conteúdo ***************/
+.Conteudo{
+	padding-top: 80px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.g2 img{
+	width: 128px;
+	height: 128px;
+}
+
+/*************** Rodapé ***************/
+footer{
+	width: 99.8%;
+	background-color: #01034E;
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 1em;
+	border-bottom: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+}
+
+/*************** Tratamento responsivo ***************/
+
+/*************** Imagens do site ***************/
+img {
+	max-width: 100%; /* Todas as imagens do site ficam responsivas */
+}
+
+/*************** 1º Ponto de quebra ***************/
+@media screen and (max-width: 1058px){
+	/***** Principal *****/
+	body{
+		margin: 0;
+	}
+
+	#main{
+		margin: 0;
+	}
+}
+
+/*************** 2º Ponto de quebra ***************/
+@media screen and (max-width: 920px){
+	#banner{
+		margin-top: 50px;
+	}
+}
+
+/*************** Smartphone ***************/
+@media screen and (max-width: 480px){
+	
+	/***** Cabeçalho *****/
+	header{
+		margin-bottom: 0;
+		text-align: center; /* Centraliza tudo */
+	}
+
+	header img{
+		margin-top: 0;
+		margin-left: 0;
+	}
+	
+	/***** Menu *****/
+	.Mobile{
+		display: block;
+		background-color: #01034E;
+		color: #FFFFFF;
+		text-decoration: none;
+		padding: 15px;
+	}
+
+	nav > ul > li{
+		float: none;
+		width: 100%;
+	}
+
+	nav ul{
+		width: 100%;
+		display: none;
+	}
+	
+	/***** Ajuste ******/
+	nav ul li a{
+		text-align: left;
+	}
+
+	nav ul li a:hover{
+		transition: all 0s; /* Remover efeito de transição */		
+	}
+
+	nav li ul li{
+		background-color: #044364;
+	}
+
+	nav li ul li a{
+		background-color: #01034E;
+		padding-left: 40px;
+	}
+
+	/***** IMPORTANTE para UX no dispositivo mobile,
+	não exibir o 2º nível do menu enquanto conteúdo
+	não for clicado	*****/
+	nav li:hover ul{
+		display: none;
+	}
+
+	/***** Banner *****/
+	#banner{
+		margin-top: 118px;
+		height: 0;			
+	}
+
+	#banner h1{		
+		font-size: 1.5em;	
+		text-align: center;	
+	}
+
+	/***** Heading *****/
+	#heading{
+		width: 90%;
+		padding: 25px;
+		margin-top: 60px;
+	}
+
+	#heading h2{
+		font-size: 1.2em;
+	}
+
+	/***** Blocos *****/
+	#destaque{
+		max-width: 315px;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	.blocos{
+		width: 100%;
+		height: 320px;
+		float: none;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+	
+}
